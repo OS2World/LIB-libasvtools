@@ -1,0 +1,376 @@
+ **INTERNAL DEVELOPMENT** Open Watcom Linker Version 1.5beta1 Limited Availability
+Portions Copyright (c) 1985-2002 Sybase, Inc. All Rights Reserved.
+Created on:       11/02/09 22:28:03
+Executable Image: accumulate.exe
+creating an OS/2 EMX executable
+
+
+                        +------------+
+                        |   Groups   |
+                        +------------+
+
+Group                           Address              Size
+=====                           =======              ====
+
+CGROUP                          0001:00000000        00008d10
+DGROUP                          0002:00000000        00000390
+
+
+
+                        +--------------+
+                        |   Segments   |
+                        +--------------+
+
+Segment                Class          Group          Address         Size
+=======                =====          =====          =======         ====
+
+TEXT32                 CODE           CGROUP         0001:00000000   00008d10
+________TEXT           CODE           CGROUP         0001:00008d10   00000000
+DATA32                 DATA           DGROUP         0002:00000000   00000110
+SET1__os2dll           DATA           DGROUP         0002:00000110   00000004
+SET2__os2dll           DATA           DGROUP         0002:00000114   00000000
+SET3__os2dll           DATA           DGROUP         0002:00000114   00000004
+SET1___CTOR_LIST__     DATA           DGROUP         0002:00000118   00000004
+SET2___CTOR_LIST__     DATA           DGROUP         0002:0000011c   00000000
+SET3___CTOR_LIST__     DATA           DGROUP         0002:0000011c   00000004
+SET1___DTOR_LIST__     DATA           DGROUP         0002:00000120   00000004
+SET2___DTOR_LIST__     DATA           DGROUP         0002:00000124   00000000
+SET3___DTOR_LIST__     DATA           DGROUP         0002:00000124   00000004
+SET1___crtinit1__      DATA           DGROUP         0002:00000128   00000004
+SET2___crtinit1__      DATA           DGROUP         0002:0000012c   00000000
+SET3___crtinit1__      DATA           DGROUP         0002:0000012c   00000004
+SET1___crtexit1__      DATA           DGROUP         0002:00000130   00000004
+SET2___crtexit1__      DATA           DGROUP         0002:00000134   00000000
+SET3___crtexit1__      DATA           DGROUP         0002:00000134   00000004
+SET1___eh_frame__      DATA           DGROUP         0002:00000138   00000004
+SET2___eh_frame__      DATA           DGROUP         0002:0000013c   00000008
+SET3___eh_frame__      DATA           DGROUP         0002:00000144   00000004
+SET1___eh_init__       DATA           DGROUP         0002:00000148   00000004
+SET2___eh_init__       DATA           DGROUP         0002:0000014c   00000004
+SET3___eh_init__       DATA           DGROUP         0002:00000150   00000004
+SET1___eh_term__       DATA           DGROUP         0002:00000154   00000004
+SET2___eh_term__       DATA           DGROUP         0002:00000158   00000004
+SET3___eh_term__       DATA           DGROUP         0002:0000015c   00000004
+SET1___fork_parent1__  DATA           DGROUP         0002:00000160   00000004
+SET2___fork_parent1__  DATA           DGROUP         0002:00000164   00000000
+SET3___fork_parent1__  DATA           DGROUP         0002:00000164   00000004
+SET1___fork_child1__   DATA           DGROUP         0002:00000168   00000004
+SET2___fork_child1__   DATA           DGROUP         0002:0000016c   00000000
+SET3___fork_child1__   DATA           DGROUP         0002:0000016c   00000004
+________DATA           DATA           DGROUP         0002:00000170   00000000
+BSS32                  BSS            DGROUP         0002:00000170   00000220
+c_common               BSS            DGROUP         0002:00000390   00000000
+________BSS            BSS            DGROUP         0002:00000390   00000000
+STACK                  STACK          AUTO           0003:00000000   00100000
+
+
+                        +----------------+
+                        |   Memory Map   |
+                        +----------------+
+
+* = unreferenced symbol
++ = symbol only referenced locally
+
+Address        Symbol
+=======        ======
+
+Module: U:\usr\lib\crt0wild.obj({standard input})
+0001:00000000* __text
+0002:00000000* __data
+0002:00000000* ___data_start
+0002:00000170* ___bss_start
+0002:00000110+ __os2dll
+0002:00000118  ___CTOR_LIST__
+0002:00000120  ___DTOR_LIST__
+0002:00000128* ___crtinit1__
+0002:00000130* ___crtexit1__
+0002:00000138  ___eh_frame__
+0002:00000148  ___eh_init__
+0002:00000154  ___eh_term__
+0002:00000160+ ___fork_parent1__
+0002:00000168+ ___fork_child1__
+Module: u:/tmp\ldconv_accumulate_o_1df64d5306e21a48d0.obj(accumulate.c)
+0001:00000040* _cmp_integers_n
+0001:00000058  _main
+0001:00000058* main
+Module: U:\usr\lib\libend.lib(src/libend/386/endlink386.asm)
+0002:00000390  _end
+0002:00000170  _edata
+Module: U:\usr\lib\libend.lib(src/libend/386/end.asm)
+0001:00008d10* _etext
+0001:00008d10* __etext
+0000:00000000  WEAK$ZERO
+0002:00000390  __end
+0002:00000170  __edata
+Module: U:\tmp\ldconv_gcc452_a_1df64d5306e21b7598.lib(__main.obj)
+0001:00000160* ___do_global_dtors
+0001:0000016b* ___do_global_ctors
+0001:00000183  ___main
+Module: U:\tmp\ldconv_asvtools_a_1df64d5306e21ae8f8.lib(fsort.obj)
+0001:000001d0* _cmp_str
+0001:000001ec* _cmp_strlen
+0001:0000023c  _cmp_integers
+0001:0000024c  _cmp_doubles
+0001:00000284* _cmp_absintegers
+0001:000002b4* _cmp_unsigned_integers
+0001:00000344* _fsort_old
+0001:0000079c* _fsort
+0001:00000c50* _funiq
+0001:00000d84* _merge
+0001:000011dc* _uniq
+0001:00001264* _uniq2
+0001:00001424* _psort
+0001:00001594* _pusort
+0001:0000171c  _bracket
+0001:000018b8* _linebuf_init
+0001:00001968* _linebuf_nextline
+0001:00001ae0* _linebuf_close
+0001:00001d48* _sortfile
+0001:00002a90* _heap_siftup
+0001:00002af0* _heap_siftdown
+0001:00002ba8  _accumulate
+0001:00002c68* _psort1
+Module: U:\tmp\ldconv_gcc452_a_1df64d5306e21b7598.lib(emx-ctordtor.obj)
+0001:00002d40  ___ctordtorInit
+0001:00002d72  ___ctordtorTerm
+Module: U:\tmp\ldconv_asvtools_a_1df64d5306e21ae8f8.lib(xfunc.obj)
+0001:00002dcc  _xcreate
+0001:00002e58  _xopen
+0001:00002ef0* _xfopen
+0001:00002f98* _xfclose
+0001:00003008* _xfwrite
+0001:0000307c* _xfread
+0001:000030f4  _xwrite
+0001:00003140* _xwrite_str
+0001:000031ac* _xwrite_str_array
+0001:00003214  _xread
+0001:00003288  _xmalloc
+0001:000032c0* _xread_str
+0001:00003314* _xread_str_array
+0001:00003378* _xfree
+0001:000033ac  _xrealloc
+0001:00003434* _xstrdup
+0001:0000346c* _xnstrdup
+0001:000034ac  _xunlink
+0001:00003510* _yunlink
+0001:00003564* _xlseek
+0001:000035d4* _xmmap
+0001:000035ec* _xmunmap
+0001:000035f4* _chunk_new
+0001:00003684* _chunk_alloc
+0001:00003778* _chunk_put
+0001:000037d4* _chunk_free
+0001:00003814* _membuf_create
+0001:0000393c* _membuf_close
+0001:000039c8* _membuf_put
+0001:00003b38* _membuf_write
+0001:00003bdc* _membuf_printf
+0001:00003ca4* _membuf_accumulate
+Module: U:\tmp\ldconv_asvtools_a_1df64d5306e21ae8f8.lib(misc.obj)
+0001:00003d90* _cmp_range
+0001:00003da0  _clock1
+0001:00003dd4* _sleep1
+0001:00003e04  _error1
+0001:00003e34* _error2
+0001:00003e60* _error3
+0001:00003ea4  _warning1
+0001:00003ec8* _warning2
+0001:00003efc* _warning3
+0001:00003f48* _debug_tools
+0001:00003f84* _snprintf1
+0001:00003fac  _vsnprintf1
+0001:00003fb8* _perm_t2b
+0001:0000415c* _perm_b2t
+0001:000041fc* _insert_commas
+0001:00004380* _insert_commas2
+0001:000043a0* _insert_commas3
+0001:000048f4  _insert_commas4
+0001:0000491c* _insert_commas5
+0001:00004e58* _insert_commas6
+0001:00004e80* _chunk_add
+0001:00004efc* _is_unix_file_entry
+0001:00004f3c* _binchars
+0001:00004fdc* _nontextchars
+0001:000050b8* _print_binary
+0001:00005128* _fprint_bits
+0001:000051e0* _ranges_intersect
+0001:00005554* _ranges_merge
+0001:00005674* _merge_ranges
+0001:000056e0* _ipow
+0001:00005724* _valid_dataline
+0001:0000575c* _read_datafile
+0001:00005aac* _read_column
+0001:00005bac* _read_n_columns
+0001:00005d1c* _read_two_columns
+0001:00005d98* _read_one_column
+0001:00005e3c* _drop_datafile
+0001:00005f00* _interpolate_l
+0002:00000210* _clock1_call_counter
+0002:00000214* _tools_debug
+Module: U:\tmp\ldconv_asvtools_a_1df64d5306e21ae8f8.lib(file_ops.obj)
+0001:000060c0* _make_subtree
+0001:000061a4* _load_stdin
+0001:00006280* _text2lines
+0001:0000631c* _flongprint
+0001:00006400* _longprint
+0001:000064d0* _print_file
+0001:0000653c  _file_length
+0001:000065b4* _load_file
+0001:00006668* _load_textfile
+0001:000066c8* _is_textfile
+0001:000067dc* _dump_file
+0001:0000683c* _copy_file
+0001:000068e4* _isindexfile
+0001:000069c4* _openlock
+0001:00006a6c  _copy_bytes
+0001:00006ba8* _f_length
+Module: U:\tmp\ldconv_gcc452_a_1df64d5306e21b7598.lib(emx-eh.obj)
+0001:00006be0  ___ehInit
+0001:00006c15* ___ehTerm
+Module: U:\tmp\ldconv_asvtools_a_1df64d5306e21ae8f8.lib(str_base.obj)
+0001:00006c50* _str_headcmp
+0001:00006cac  _stricmp1
+0001:00006d34* _strnicmp1
+0001:00006dec  _str_tailcmp
+0001:00006e54  _str_tailcmpi
+0001:00006eb0  _str_lastspn
+0001:00006f04* _str_stristr
+0001:00006fd4* _str_imatch
+0001:0000701c* _str_index1
+0001:0000707c* _str_copy
+0001:000070ac  _str_delete
+0001:000070f0* _str_insert
+0001:0000713c* _str_compress_spaces
+0001:000071ac* _str_replace
+0001:00007308* _remove_dots
+0001:00007378* _remove_whitespace
+0001:00007468* _str_sep1
+0001:000074bc* _str_copy_worker
+0001:000074ec  _str_reduce
+0001:00007590* _str_cats
+0001:0000761c* _str_strdup1
+0001:0000765c  _str_strip
+0001:000076ac* _str_strip2
+0001:00007758  _str_numchars
+0001:0000777c* _str_numstr
+0001:000077c0  _str_translate
+0001:000077fc* _str_sanify
+0001:00007988* _str_join
+0001:000079e4* _str_append
+0001:00007a70* _str_mjoin
+0001:00007b24* _str_msjoin
+0001:00007bfc* _str_sjoin
+0001:00007c58* _str_refine_buffer
+0001:00007cac* _str_pathdcmp
+0001:00007d88* _str_lower
+0001:00007da8* _tolower1
+0001:00007db8* _sanify_pathname
+0001:00007f34* _strtoq1
+0001:00008258  _str_parseline
+0001:00008328* _str_casestr
+0001:00008334* _str_cutoff
+0001:0000839c  _str_words
+0001:000087a0* _str_split
+Module: U:\tmp\ldconv_asvtools_a_1df64d5306e21ae8f8.lib(str_shorten.obj)
+0001:00008930* _str_isvowel
+0001:0000899c  _str_try_shorten
+0001:00008a98* _str_fatsafe
+0001:00008ac8* _str_shorten
+
+
+                        +----------------------+
+                        |   Imported Symbols   |
+                        +----------------------+
+
+Symbol                              Module
+======                              ======
+
+___libc_ForkRegisterModule          libc063
+___init_app                         libc063
+__wildcard                          libc063
+__CRT_init                          libc063
+__atfork_callback                   libc063
+__std_exit                          libc063
+__std_malloc                        libc063
+__std_random                        libc063
+__errno                             libc063
+__std_qsort                         libc063
+__std_putchar                       libc063
+__std_printf                        libc063
+___ctordtorInit1                    libc063
+___ctordtorTerm1                    libc063
+__std_atexit                        libc063
+__std_strcmp                        libc063
+__alloca                            gcc452
+__std_free                          libc063
+__std_getpid                        libc063
+___stderrp                          libc063
+___udivdi3                          gcc452
+___umoddi3                          gcc452
+___libc_GLocaleCtype                libc063
+___stdoutp                          libc063
+__std_close                         libc063
+__std_read                          libc063
+__std_memmove                       libc063
+__std_fread                         libc063
+__std_fclose                        libc063
+__std_realloc                       libc063
+__std_fopen                         libc063
+__std_fseeko                        libc063
+__std_snprintf                      libc063
+__std_fwrite                        libc063
+__std_strerror                      libc063
+__std_rename                        libc063
+__std_fileno                        libc063
+___stdinp                           libc063
+___register_frame_table             gcc452
+___deregister_frame                 gcc452
+__std_open                          libc063
+__std_write                         libc063
+__std_strdup                        libc063
+__std_unlink                        libc063
+__std_lseek                         libc063
+__std_vsnprintf                     libc063
+__std_gettimeofday                  libc063
+__std_vfprintf                      libc063
+__std_fflush                        libc063
+__std_strcpy                        libc063
+__std_fputc                         libc063
+__std_fprintf                       libc063
+__std_strspn                        libc063
+__std_fgets                         libc063
+_strcasestr                         libc063
+__std_rewind                        libc063
+__std_atof                          libc063
+__std_atoi                          libc063
+__std_strchr                        libc063
+__std_access                        libc063
+__std_mkdir                         libc063
+__std_fputs                         libc063
+__std_flock                         libc063
+__std_stat                          libc063
+__std_strstr                        libc063
+__std_strncpy                       libc063
+__std_strcat                        libc063
+__std_strrchr                       libc063
+
+
+                        +--------------------+
+                        |   Libraries Used   |
+                        +--------------------+
+
+U:\tmp\ldconv_asvtools_a_1df64d5306e21ae8f8.lib
+U:\tmp\ldconv_gcc452_a_1df64d5306e21b7598.lib
+U:\usr\lib\libc_alias.lib
+U:\usr\local452\lib\libc_dll.lib
+U:\usr\lib\libend.lib
+
+
+                        +-----------------------+
+                        |   Linker Statistics   |
+                        +-----------------------+
+
+Stack size:  00100000 (1048576.)
+Memory size:  001090a0 (1085600.)
+Entry point address: 0001:00000000
+Link time: 00:00.14
