@@ -1,0 +1,142 @@
+tcpip.lo: tcpip.c config.h U:/USR/include/sys/time.h \
+ U:/USR/include/sys/_timeval.h U:/USR/include/sys/_types.h \
+ U:/USR/include/sys/cdefs.h U:/USR/include/sys/gnu/cdefs.h \
+ U:/USR/include/features.h U:/USR/include/machine/_types.h \
+ U:/USR/include/386/_types.h U:/USR/include/sys/types.h \
+ U:/USR/include/machine/endian.h U:/USR/include/386/endian.h \
+ U:/USR/include/sys/select.h U:/USR/include/sys/_sigset.h \
+ U:/USR/include/sys/timespec.h U:/USR/include/time.h \
+ U:/USR/include/string.h U:/USR/include/strings.h U:/USR/include/unistd.h \
+ U:/USR/include/sys/unistd.h U:/USR/include/sys/_null.h \
+ U:/USR/include/stdlib.h U:/USR/include/malloc.h U:/USR/include/errno.h \
+ U:/USR/include/sys/errno.h U:/USR/include/fcntl.h \
+ U:/USR/include/sys/fcntl.h U:/USR/include/sys/stat.h \
+ U:/USR/include/netinet/in.h U:/USR/include/sys/param.h \
+ U:/USR/include/sys/../types.h U:/USR/include/machine/ansi.h \
+ U:/USR/include/386/ansi.h U:/USR/include/sys/syslimits.h \
+ U:/USR/include/sys/signal.h U:/USR/include/machine/signal.h \
+ U:/USR/include/386/signal.h U:/USR/include/machine/trap.h \
+ U:/USR/include/386/trap.h U:/USR/include/machine/param.h \
+ U:/USR/include/386/param.h U:/USR/include/machine/limits.h \
+ U:/USR/include/limits.h U:/USR/include/sys/limits.h \
+ U:/USR/include/machine/_limits.h U:/USR/include/386/_limits.h \
+ U:/USR/include/netdb.h U:/USR/include/sys/socket.h \
+ U:/USR/include/sys/uio.h U:/USR/include/sys/ioccom.h asvtools.h \
+ U:/USR/include/stdio.h \
+ U:/USR/local452/lib/gcc/i386-pc-os2-emx/4.5.2/include/stdarg.h \
+ U:/USR/include/stdint.h U:/USR/include/sys/stdint.h \
+ U:/USR/include/machine/_stdint.h U:/USR/include/386/_stdint.h
+
+config.h:
+
+U:/USR/include/sys/time.h:
+
+U:/USR/include/sys/_timeval.h:
+
+U:/USR/include/sys/_types.h:
+
+U:/USR/include/sys/cdefs.h:
+
+U:/USR/include/sys/gnu/cdefs.h:
+
+U:/USR/include/features.h:
+
+U:/USR/include/machine/_types.h:
+
+U:/USR/include/386/_types.h:
+
+U:/USR/include/sys/types.h:
+
+U:/USR/include/machine/endian.h:
+
+U:/USR/include/386/endian.h:
+
+U:/USR/include/sys/select.h:
+
+U:/USR/include/sys/_sigset.h:
+
+U:/USR/include/sys/timespec.h:
+
+U:/USR/include/time.h:
+
+U:/USR/include/string.h:
+
+U:/USR/include/strings.h:
+
+U:/USR/include/unistd.h:
+
+U:/USR/include/sys/unistd.h:
+
+U:/USR/include/sys/_null.h:
+
+U:/USR/include/stdlib.h:
+
+U:/USR/include/malloc.h:
+
+U:/USR/include/errno.h:
+
+U:/USR/include/sys/errno.h:
+
+U:/USR/include/fcntl.h:
+
+U:/USR/include/sys/fcntl.h:
+
+U:/USR/include/sys/stat.h:
+
+U:/USR/include/netinet/in.h:
+
+U:/USR/include/sys/param.h:
+
+U:/USR/include/sys/../types.h:
+
+U:/USR/include/machine/ansi.h:
+
+U:/USR/include/386/ansi.h:
+
+U:/USR/include/sys/syslimits.h:
+
+U:/USR/include/sys/signal.h:
+
+U:/USR/include/machine/signal.h:
+
+U:/USR/include/386/signal.h:
+
+U:/USR/include/machine/trap.h:
+
+U:/USR/include/386/trap.h:
+
+U:/USR/include/machine/param.h:
+
+U:/USR/include/386/param.h:
+
+U:/USR/include/machine/limits.h:
+
+U:/USR/include/limits.h:
+
+U:/USR/include/sys/limits.h:
+
+U:/USR/include/machine/_limits.h:
+
+U:/USR/include/386/_limits.h:
+
+U:/USR/include/netdb.h:
+
+U:/USR/include/sys/socket.h:
+
+U:/USR/include/sys/uio.h:
+
+U:/USR/include/sys/ioccom.h:
+
+asvtools.h:
+
+U:/USR/include/stdio.h:
+
+U:/USR/local452/lib/gcc/i386-pc-os2-emx/4.5.2/include/stdarg.h:
+
+U:/USR/include/stdint.h:
+
+U:/USR/include/sys/stdint.h:
+
+U:/USR/include/machine/_stdint.h:
+
+U:/USR/include/386/_stdint.h:

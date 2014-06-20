@@ -1,0 +1,3 @@
+deflex.lo: deflex.c deflex.h
+
+deflex.h:
